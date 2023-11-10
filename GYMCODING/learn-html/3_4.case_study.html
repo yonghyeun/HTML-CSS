@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3_3.plusstudy</title>
+    <style>
+      hr {
+        height: 2px; /* 원하는 두께 설정 */
+        background-color: red;
+      }
+      ul {
+        width: 50%;
+      }
+      ul:nth-of-type(3) {
+        width: 80%;
+      }
+      .custom-hr {
+        height: 5px;
+        background-color: blue;
+      }
+      .middle-line {
+        height: 10px;
+        background-color: grey;
+      }
+      code {
+        display: block;
+        padding: 10px;
+        background-color: rgb(0, 247, 255);
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 50%;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px;
+      }
+      .col1 {
+        background-color: red;
+      }
+      .col2 {
+        background-color: yellow;
+      }
+      .col3 {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <dt><h1>P태그와 br태그</h1></dt>
+    <dd>
+      <ul>
+        <li>p태그를 이용해 글을 작성 할 때</li>
+        <hr />
+        <p>안녕하세요 제 이름은 댕댕현입니다.</p>
+        <p>제가 좋아하는 것은 김치볶음밥입니다.</p>
+        <hr />
+      </ul>
+      <ul>
+        <li>br 태그를 이용해 글을 작성 할 때</li>
+        안녕하세요 제 이름은 댕댕현입니다.
+        <br />
+        제가 좋아하는 것은 김치볶음밥입니다.
+        <hr />
+      </ul>
+
+      <em
+        >p 태그와 br 태그는 문단을 변경할 뿐만 아니라 문단이 나눠지는 단위 또한
+        다르구나 !
+      </em>
+    </dd>
+
+    <dt><h3>추가로 알게 된 부분</h3></dt>
+    <dd>
+      <ul>
+        <hr class="custom-hr" />
+        <li>
+          스타일 태그를 이용하여 hr 태그의 두께와 컬러를 설정 할 수 있었음
+        </li>
+        <li>스타일 태그를 이용하여 ul 태그의 폭을 설정 할 수 있었음</li>
+        <li>
+          nth-of-type(n: int) 를 이용하여 n 번째 태그를 개별적으로 설정 할 수
+          있었음
+        </li>
+        <li>
+          그 뿐만이 아니라 태그에 class 를 설정하여 class 별 style 을 설정 할 수
+          있었음
+        </li>
+      </ul>
+    </dd>
+    <hr class="middle-line" />
+    <h1>dl,dt,dd 태그</h1>
+    <dl>
+      <dt>dl 태그</dt>
+      <dd>
+        <ul>
+          <li>
+            dl 태그는 Definition List로 정의 목록을 나타내며 dt,dd 의 정의를
+            묶어 표현 할 때 사용된다 <br />
+            일반적으로 dt와 dd를 그룹화 하여 표현함
+          </li>
+          <!-- 다른 설명 -->
+        </ul>
+      </dd>
+      <dt>dt 태그</dt>
+      <dd>
+        <ul>
+          <li>dt 태그는 정의 목록 내에서 용어를 정의 할 때 사용됨</li>
+          <li>
+            일반적으로 dl 내에서 사용되며 이 태그로 묶인 텍스트는 해당 dt 용어를
+            설명함
+          </li>
+          <!-- 다른 설명 -->
+        </ul>
+      </dd>
+      <dt>dd 태그</dt>
+      <dd>
+        <ul>
+          <li>
+            dd 태그 : Definition Description 으로 dt로 정의된 용어의 정의를
+            설명하는데 사용됨
+          </li>
+          <li>주로 dl 내에서 dt 와 짝을 이뤄 사용됨</li>
+          <li>하나의 dt 태그에서 1개 이상의 dt 태그를 사용 가능</li>
+          <!-- 다른 설명 -->
+        </ul>
+      </dd>
+    </dl>
+    <hr class="middle-line" />
+    <br />
+    <h1>Table 태그 복습하기</h1>
+    <table>
+      <caption>
+        가상성적표
+      </caption>
+      <colgroup>
+        <col class="col1" />
+        <col class="col2" />
+        <col class="col3" />
+      </colgroup>
+      <thead>
+        <!-- 제목 열에 해당 하는 경우엔 thead 로 그룹화 -->
+        <tr>
+          <!-- tr로 행을 정하고 행 별 열에 대한 컨텐츠를 넣는다 -->
+          <!-- 이 때 제목 열일 경우엔 th 태그, 내용을 담은 열일 경우엔 td 사용 -->
+          <th>반</th>
+          <th>번호</th>
+          <th>성적</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 내용 열에 해당하는 경우엔 tbody로 그룹화 -->
+        <tr>
+          <!-- rowspan 으로 2번째 row 까지 병합하기 (이 때 동일한 위치의 td를 고려) -->
+          <td rowspan="2">1반</td>
+          <td>30번</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <!-- <td>1반</td> -->
+          <td>29번</td>
+          <td>85</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!-- colspan 으로 첫 번째 td 부터 2번째 td까지 병합 -->
+          <td colspan="2">평균점수</td>
+          <!-- <td>번호</td> -->
+          <td>87.5</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
