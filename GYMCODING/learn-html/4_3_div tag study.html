@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4. div 태그 추가 공부</title>
+    <style>
+      dt {
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      dd {
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 800px;
+        text-align: center;
+        margin: 0 auto; /* margin : 0 auto 는 테이블을 수평으로 가운데 정렬 */
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px;
+      }
+      th {
+        background-color: orangered;
+        color: white;
+      }
+      caption {
+        border: 1px solid black;
+        border-bottom: none;
+        background-color: orangered;
+        color: white;
+      }
+      .codeblock {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1.5;
+        overflow: auto;
+      }
+
+      .listup {
+        background-color: rgb(91, 95, 95);
+        border: 1px solid rgb(137, 140, 140);
+        width: 80%;
+        padding: 10px;
+        overflow: auto;
+        color: white;
+        margin: auto;
+      }
+
+      div#side_left {
+        width: 200px;
+        height: 400px;
+        background-color: yellow;
+        float: left;
+        margin: 5px;
+      }
+      #side_left_box {
+        width: 95%;
+        height: 45%;
+        background-color: blue;
+        float: left;
+        margin: 5px;
+      }
+      #mid_content {
+        width: 400px;
+        height: 400px;
+        background-color: green;
+        float: left;
+        margin: 5px;
+      }
+      #side_content_box {
+        display: inline;
+        background-color: white;
+        margin: 5px;
+      }
+      #side_right {
+        width: 200px;
+        height: 400px;
+        background-color: red;
+        float: left;
+        margin: 5px;
+      }
+      #side_right_box {
+        width: 95%;
+        height: 45%;
+        background-color: skyblue;
+        margin: 5px;
+        margin-top: 95%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>4. Semantic tag 추가공부</header>
+    <dl>
+      <dt>1. div tag</dt>
+      <br />
+      <dd>
+        div 태그란 division tag의 약자로
+        <strong
+          >다른 태그와 다르게 특별한 기능을 갖고 있지는 않고<br />
+          가상의 레이아웃</strong
+        >을 설계하는데 쓰이며, 주로 CSS와 연동하여 쓰인다.
+        <br />
+        <h3>사용 예시</h3>
+        <div style="background-color: cyan">구역1</div>
+        <div style="width: 100px; height: 100px; background-color: yellow">
+          구역2
+        </div>
+        <br />
+        <div class="codeblock">
+          <code>
+            <pre>
+            &lt;div style="background-color: cyan"&gt;구역1&lt;/div&gt;
+            &lt;div style="width: 100px; height: 100px; background-color: yellow"&gt;구역2&lt;/div&gt;
+          </pre
+            >
+          </code>
+        </div>
+        <table>
+          <caption>
+            div 태그 사용법 & 예제
+          </caption>
+          <thead>
+            <tr>
+              <th>태그</th>
+              <th>속성</th>
+              <th>비고</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="7">div</td>
+              <td>style</td>
+              <td>스타일</td>
+            </tr>
+            <tr>
+              <td>width</td>
+              <td>가로 크기</td>
+            </tr>
+            <tr>
+              <td>height</td>
+              <td>세로 크기</td>
+            </tr>
+            <tr>
+              <td>border</td>
+              <td>테두리 굵기</td>
+            </tr>
+            <tr>
+              <td>background-color</td>
+              <td>배경 색상</td>
+            </tr>
+            <tr>
+              <td>float</td>
+              <td>정렬</td>
+            </tr>
+            <tr>
+              <td>margin</td>
+              <td>여백</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <div class="listup">
+          <ol>
+            <li>
+              style은 div 태그의 스타일을 지정해주는 것으로 다른 속성들을 사용
+              할 수 있게끔 해준다.
+            </li>
+            <li>
+              width 는 div의 가로크기를 정해준다. 픽셀(px) 단위로도 정해줄 수
+              있고 %(비율) 단위로 정할 수 있다.
+            </li>
+            <li>
+              height는 div의 세로크기를 정해준다. width와 같이 px , % 단위로
+              정할 수 있다.
+            </li>
+            <li>
+              border는 div의 테두리의 굵기를 정해주며 숫자가 클 수록 굵기가
+              굵어진다.
+            </li>
+            <li>background-color는 div 태그의 배경 색상을 정하는 속성이다</li>
+            <li>
+              flot은 div의 정렬(좌,우)을 하는 속성이다.가운데 정렬은 안된다.
+            </li>
+            <li>
+              margin 은 div의 정렬 기준 끝에서부터 여백을 주는 속성이다.
+              <br />(margin-top, margin-bottom)
+            </li>
+          </ol>
+        </div>
+        <br />
+        <p>
+          코드 블록과 리스트를 담는 것들도 div 태그 안에 넣어서 구역 안에서
+          이쁘게 정리 할 수 있다.
+        </p>
+        <br />
+        <p>
+          지금은 간단하게 블록만 나눠봤지만 실제 페이지 레이아웃처럼 블록을
+          나눠보자
+        </p>
+        <br />
+
+        <div id="side_left">
+          사이드바 왼쪽
+          <div id="side_left_bottom">사이드바 왼쪽 위</div>
+          <div id="side_left_box">사이드바 왼쪽 아래</div>
+        </div>
+
+        <div id="mid_content">
+          <div id="side_content_box">첫 번째 공간</div>
+          <div id="side_content_box">두 번째 공간</div>
+        </div>
+
+        <div id="side_right">
+          <div id="side_right_box">사이드바 오른쪽 아래</div>
+        </div>
+      </dd>
+    </dl>
+  </body>
+</html>
