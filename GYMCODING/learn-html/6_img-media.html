@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>이미지,오디오태그</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+        border: 1px solid darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>이미지 태그</h2>
+    <img src="asset/img.jpg" alt="따봉고양이" />
+    <h3>이미지 크기 변경</h3>
+    <p>이미지의 크기를 `width = "200"` 으로 지정해보자</p>
+    <img width="200" src="asset/img_2.png" alt="크기 변경 따봉 고양이" />
+    <h3>하위 폴더에 위치한 이미지 가져오기</h3>
+    <p>
+      현재 html 파일이 존재하는 문서 안 하위폴더인 img 폴더 안에 이미지가
+      들어있기 때문에 <br />
+      'src = "/img / img_2.png"' 로 설정
+    </p>
+    <img src="/img/img_2.png" alt="" 강아지고양이 />
+    <h1>오디오 태그</h1>
+    <audio src="asset/free_audio.mov" controls></audio>
+    <h1>비디오 태그</h1>
+    <video
+      width="400"
+      src="asset/free_video.mp4"
+      controls
+      type="free_video.mp4"
+    ></video>
+    <h3>포스터 태그 사용해보기</h3>
+    <video src="asset/free_video.mp4" controls poster="asset/img.jpg"></video>
+    <h3>하이퍼 링크</h3>
+    <a href="http://www.naver.com">네이버</a>와
+    <a href="http://www.google.com">구글</a>은 포털 사이트이다.
+    <br />
+    <!-- 이동이 아니라 새 탭으로 들어가기 -->
+    <a href="https:\\www.naver.com" target="_blank">네이버 새탭으로 이동! </a>
+    <h3>하이퍼 링크를 이용하여 HTML 내 다른 위치로 이동하기</h3>
+    <a href="#target">div 태그로 이동</a>
+    <div>1</div>
+
+    <div id="target">9</div>
+    <a href="mailto:ttddcc119@naver.com">이메일 보내기</a>
+    <a href="5_1_inline_block.html">다른 html 파일 열어보기!</a>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

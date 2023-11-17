@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>href 를 이용한 스크롤</title>
+    <style>
+      body {
+        height: 200vh;
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: orange;
+        padding: 1px;
+      }
+
+      nav ul {
+        list-style: circle;
+        padding: 0;
+        display: flex;
+      }
+
+      nav li {
+        padding: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#section1">섹션 1로 이동</a></li>
+        <li><a href="#section2">섹션 2로 이동</a></li>
+        <li><a href="#section3">섹션 3로 이동</a></li>
+      </ul>
+    </nav>
+    <section id="section1">section1</section>
+    <section id="section2">section2</section>
+    <section id="section3">section3</section>
+  </body>
+</html>

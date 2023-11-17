@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      fieldset {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Input tag</legend>
+        <ul>
+          <li>
+            <!-- label 의 for 와 input 의 id 를 일치 시켜줘야 한다 -->
+            <label for="email">이메일</label>
+            <input type="email" id="email" readonly value="readonly" />
+          </li>
+          <li>
+            <label for="text">텍스트</label>
+            <input type="text" id="text" disabled value = 'disabled입니다' / >
+          </li>
+          <li>
+            <label for="tel">전화번호</label>
+            <input type="tel" id="tel" autofocus />
+          </li>
+          <li>
+            <label for="url">url</label>
+            <input type="url" id="url" placeholder="url을입력하셈요" />
+          </li>
+          <li>
+            <label for="number">숫자</label>
+            <input type="number" id="number" min="5" max="10" />
+          </li>
+          <li>
+            <label for="range">range</label>
+            <input type="range" id="range" />
+          </li>
+          <li>
+            <label for="password">password</label>
+            <input type="password" id="password" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>날짜관련</legend>
+        <ul>
+          <li>
+            <label for="date">date</label>
+            <input type="date" id="date" min="2023-01-01" max="2023-12-31" />
+          </li>
+          <li>
+            <label for="month">month</label> <input type="month" id="month" />
+          </li>
+          <li>
+            <label for="week">week</label> <input type="week" id="week" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>시간관련</legend>
+        <ul>
+          <li>
+            <!-- 시간도 min , max를 지정하면 자동 유효성 검사-->
+            <label for="time">time</label>
+            <input type="time" id="time" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>그외</legend>
+        <ul>
+          <li>
+            <label for="file">single file</label>
+            <input type="file" />
+          </li>
+          <li>
+            <label for="file">multiple file</label>
+            <input type="file" multiple />
+          </li>
+          <li>
+            <!-- input type 이 hidden 인 경우엔 UI 상에 나타나지 않음 -->
+            <label for="hidden"></label>
+            <input type="hidden" name="" value="" />
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" value="제출하기" min="16:00" max="18:00" />
+    </form>
+  </body>
+</html>

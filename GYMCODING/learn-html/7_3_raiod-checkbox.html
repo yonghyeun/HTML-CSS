@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>radiocheckbox</title>
+    <style>
+      fieldset {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="ex URI">
+      <fieldset>
+        <legend>좋아하는 색상을 모두 선택해주세요</legend>
+        <ul>
+          <li>
+            <label for="red">빨강</label>
+            <input type="checkbox" id="red" value="red" />
+          </li>
+          <li>
+            <label for="red">주황</label>
+            <input type="checkbox" id="orange" value="red" />
+          </li>
+          <li>
+            <label for="red">노랑</label>
+            <input type="checkbox" id="yellow" value="red" />
+          </li>
+          <li>
+            <label for="red">초록</label>
+            <input type="checkbox" id="green" value="red" />
+          </li>
+          <li>
+            <label for="red">파랑</label>
+            <input type="checkbox" id="blue" value="red" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>선호하는 배송 방식은</legend>
+        <ul>
+          <li>
+            <label for="free">무료</label>
+            <input type="radio" name="delivery" id="free" value="free" />
+          </li>
+          <li>
+            <label for="pay">유료</label>
+            <input type="radio" name="delivery" id="pay" value="pay" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>자기소개서</legend>
+        <label for="selfintroduction"></label>
+        <textarea
+          name="introduction"
+          id="selfintroduction"
+          cols="30"
+          rows="5"
+          placeholder="자기소개서를 입력해주세요"
+        ></textarea>
+      </fieldset>
+
+      <fieldset style="width: 400px">
+        <legend>사과 뭐드실레예?</legend>
+        <ul>
+          <li>
+            <label for="apple">먹을 사과 양을 하나만 선택하세요</label>
+            <select name="appleorder" id="apple">
+              <option value="10kg">사과 10kg</option>
+              <option value="20kg" selected>사과 20kg</option>
+              <option value="30kg">사과 30kg</option>
+              <option value="40kg">사과 40kg</option>
+              <option value="50kg">사과 50kg</option>
+            </select>
+          </li>
+          <li>
+            <label for="apple_multiple">먹을 사과를 여러개 선택하세요</label>
+            <select name="appleorder" id="apple" multiple>
+              <option value="10kg">사과 10kg</option>
+              <option value="20kg" selected>사과 20kg</option>
+              <option value="30kg">사과 30kg</option>
+              <option value="40kg">사과 40kg</option>
+              <option value="50kg">사과 50kg</option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset style="width: 400px">
+        <legend>아이스크림 무슨맛 드실레예</legend>
+        <ul>
+          <li>
+            <label for="ice-cream-flavor">맛을 선택하세요</label>
+            <input
+              list="ice-cream-flavor"
+              id="ice-cream-flavor"
+              name="ice-cream-flavor"
+            />
+            <datalist id="ice-cream-flavor">
+              <option value="초콜렛" selected></option>
+              <option value="바나나"></option>
+              <option value="딸기"></option>
+              <option value="망고"></option>
+            </datalist>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="button">제출하기</button>
+    </form>
+  </body>
+</html>
