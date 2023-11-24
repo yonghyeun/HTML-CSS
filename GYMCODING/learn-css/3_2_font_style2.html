@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        border: 1px solid black;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .text-left {
+        text-align: left;
+      }
+      .article {
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+        word-spacing: 10px;
+        text-indent: 1rem;
+      }
+
+      .transform-case {
+        text-transform: uppercase;
+      }
+
+      .article > a {
+        text-decoration: none;
+      }
+      .text-shadow {
+        text-shadow: 10px 5px 5px red;
+      }
+
+      ul {
+        list-style: lower-latin;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p class="content text-center">댕댕현</p>
+      <p class="content text-right">댕댕현</p>
+      <p class="content text-left">댕댕현</p>
+    </section>
+    <hr />
+    <section>
+      <p class="article">
+        이렇게 함으로써, <span class="transform-case">content</span> 클래스가
+        <a href="#">지정된 요소</a>에는 border: 1px solid black; 스타일이,
+        .text-center 클래스가 지정된 요소에는 text-align: center; 스타일이,
+        그리고 두 클래스를 모두 가진 요소에는 color: blue; 스타일이 적용됩니다.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <h2 class="text-shadow">댕댕현의 아침 공부</h2>
+    </section>
+
+    <section>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </section>
+  </body>
+</html>

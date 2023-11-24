@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div.border {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-top: 10px dotted red;
+        border-bottom: 5px dashed blue;
+        border-left: 1px solid black;
+        border-right: 3px solid green;
+      }
+
+      div.radius {
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border-radius: 30%;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .content-box {
+        width: 100px;
+        height: 100px;
+        border: 10px solid black;
+        margin: 10px;
+        padding: 20px;
+        box-sizing: content-box;
+      }
+
+      .border-box {
+        width: 100px;
+        height: 100px;
+        border: 10px solid red;
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border"></div>
+    <div class="radius">둥글둥글</div>
+    <div class="content-box"></div>
+    <div class="border-box"></div>
+  </body>
+</html>
