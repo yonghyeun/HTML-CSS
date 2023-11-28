@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red {
+        background-color: red;
+        width: 120px;
+        height: 120px;
+      }
+      .image {
+        background-image: url(/asset/cat1.jpg);
+        width: 600px;
+        height: 300px;
+      }
+      .image-norepeat {
+        background-image: url(/asset/cat1.jpg);
+        background-color: green;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 300px;
+      }
+      .image-repeat-x {
+        background-image: url(/asset/cat1.jpg);
+        background-color: green;
+        background-repeat: repeat-x;
+        width: 600px;
+        height: 300px;
+      }
+      .image-position {
+        background-image: url(/asset/cat1.jpg);
+        background-color: green;
+        background-repeat: no-repeat;
+        background-position: top right;
+        width: 600px;
+        height: 300px;
+      }
+      div[class*='attachment'] {
+        background-image: url(/asset/cat1.jpg);
+        background-color: red;
+        background-repeat: no-repeat;
+        background-position: top right;
+        width: 300px;
+        height: 200px;
+        display: inline-block;
+        overflow: scroll;
+      }
+      .background-attachment-scroll {
+        background-attachment: scroll;
+      }
+      .background-attachment-fixed {
+        background-attachment: fixed;
+      }
+      .background-attachment-local {
+        background-attachment: local;
+      }
+      .background-size {
+        background-image: url(/asset/cat2.jpg);
+        background-repeat: no-repeat;
+        background-color: green;
+        width: 150px;
+        height: 200px;
+        background-size: contain;
+      }
+      .linear-gradient {
+        width: 400px;
+        height: 200px;
+        background: linear-gradient(red, blue);
+      }
+      .radial-gradient {
+        width: 400px;
+        height: 200px;
+        background: radial-gradient(circle at 10% 50%, red, blue, green);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+    <h3>background-img</h3>
+    <p>이미지가 width , height 에 맞춰 반복되어 나타난다</p>
+    <div class="image"></div>
+    <p>만약 반복 하고 싶지 않다면 background-repeat 를 설정하면 된다</p>
+    <h3>background-repeat : no-repeat</h3>
+    <div class="image-norepeat"></div>
+    <h3>background-repeat : repeat-x</h3>
+    <p>
+      <code>repeat-x</code> 나 <code>repeat-y</code> 등을 이용해서 repeat 할
+      구간을 정할 수 있음
+    </p>
+    <h3>background-position</h3>
+    <p>
+      no-repeat 상태에서
+      <code>image-position : '상하 위치' , '좌우 위치'</code> 설정 가능
+      <br />
+      현재는 <code>background-position : top right</code>
+    </p>
+    <div class="image-position"></div>
+    <h3>background-attachment</h3>
+    <p>
+      div 태그 안에 <code>lorem</code> 을 설정하여 무의미한 글자를 엄청나게 많이
+      만들어서 div 태그 보다 content 들이 훨씬 양이 많게 만들었음
+    </p>
+    <p>
+      이후 css 에서 overflow 속성을 scroll 로 설정하여 overflow 되는 content
+      들에 대해 scroll 생성
+    </p>
+    <p>overflow-x , overflow-y 로도 생성 가능</p>
+    <div class="background-attachment-scroll">
+      <h1>scroll</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, rerum
+      ea fugiat accusamus sed autem debitis reprehenderit, eius, quas dolorem
+      minus tempore similique! Sunt, qui neque in veniam ab facere? Voluptates
+      esse reprehenderit atque voluptas perspiciatis earum nulla illum! Totam
+      excepturi delectus sint mollitia quae in, dolores nemo consectetur, ad
+      eligendi quo id voluptatibus omnis odit! Assumenda dolore delectus
+      reprehenderit! Rem fuga nostrum quam ad fugit, explicabo consequatur unde,
+      similique illum quasi, eaque quo quidem ducimus modi! Enim consequuntur
+      commodi esse recusandae repudiandae perferendis harum, dicta autem
+      provident numquam molestias? Unde dolorem, rem aut, porro veniam placeat
+      saepe voluptatum consequuntur dolor nesciunt ipsa! Maiores nostrum rerum
+      velit temporibus voluptates, labore saepe quibusdam, consequatur quos sint
+      aliquam voluptas ipsum nemo quae! Aliquam rem, odio officiis blanditiis
+      illum adipisci incidunt recusandae eos sed molestiae tenetur consectetur
+      molestias quis cum nihil totam alias eligendi quae fuga doloremque,
+      tempore voluptatem accusamus? Quia, veritatis recusandae! Recusandae
+      omnis, doloremque cum qui enim minus, totam repellendus magnam maiores
+      aliquam eum, voluptatem fuga beatae! Neque sit eos at sed, quisquam
+      reiciendis voluptate aperiam, laboriosam consequuntur repudiandae rerum
+      deleniti. Quos maiores odit dolor culpa omnis natus blanditiis distinctio
+      similique aliquid molestiae esse harum quia, quo perspiciatis earum, ut
+      perferendis repellat. Eligendi odio illo maiores voluptates animi.
+      Pariatur, porro inventore. In vero commodi deserunt fugit quo repellendus
+      perferendis ex libero maxime ullam cum, rem reprehenderit porro eligendi
+      minus optio distinctio voluptatibus. Laboriosam sed sequi earum quo labore
+      provident itaque commodi? Ipsum aut cupiditate eos, perspiciatis repellat
+      nam animi quisquam consequuntur ullam consequatur vel earum amet
+      consectetur? Dolor beatae corporis cum laudantium alias nobis dolorem
+      cupiditate officiis ex possimus. Perferendis, consectetur.
+    </div>
+    <div class="background-attachment-fixed">
+      <h1>fixed</h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+      asperiores, est laudantium ea laboriosam ab earum quas molestiae rerum
+      sint quis voluptas laborum sunt debitis provident, minus ipsum? Fuga,
+      delectus. Repellat iure laboriosam corrupti? Quod tenetur dolore
+      consequatur incidunt minus perferendis ex eum tempora illum nulla
+      consequuntur dicta in quo, expedita magnam unde velit quasi ipsa ut iste.
+      Distinctio, amet. Quisquam esse dolorum repudiandae magni adipisci qui
+      enim, minus velit provident sit doloribus distinctio vero ut aperiam totam
+      ea! Minus hic inventore quisquam cumque iure odit accusantium, sit quidem
+      exercitationem? Iste non quos tenetur similique explicabo quo obcaecati
+      impedit doloremque aut, hic quaerat velit nesciunt, sed quae vitae quasi
+      ipsum doloribus repellendus assumenda sit voluptatum incidunt ea!
+      Quibusdam, architecto iste! Provident corporis ipsa dolore animi nobis
+      fugiat deserunt, quasi suscipit, cum similique, asperiores quas.
+      Asperiores eos laboriosam magnam nihil perspiciatis at, est atque in
+      deserunt ex! Et blanditiis reiciendis dignissimos. Placeat laborum ratione
+      odio labore impedit suscipit incidunt veniam cumque deserunt ducimus,
+      voluptatibus alias rem veritatis ipsum nulla facere aliquid deleniti,
+      tempora nostrum qui! Consectetur incidunt corrupti maxime doloribus
+      explicabo. Quis, mollitia distinctio doloribus assumenda eum cupiditate?
+      Tenetur porro nostrum sequi alias, tempore nihil atque delectus,
+      consectetur magni, dolorem natus tempora illo aliquam placeat. Possimus
+      voluptatem reprehenderit odit exercitationem fuga! Odio non libero fuga
+      quo corrupti harum dolorem voluptates optio. Tempore quod at consequuntur
+      optio sed quae saepe eveniet tempora, veritatis et ut esse consectetur
+      voluptates expedita sequi numquam nihil?
+    </div>
+    <div class="background-attachment-local">
+      <h1>local</h1>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus
+      ex veniam inventore? Iusto minima illo inventore sed omnis sapiente
+      cupiditate consectetur, harum veniam nisi quia vitae cumque sunt aut.
+      Provident harum totam dolorum aperiam consequatur quos, exercitationem
+      incidunt aliquam similique libero facere accusamus debitis sint sunt ad,
+      magni quidem laudantium deleniti, corrupti saepe fuga. Nam distinctio
+      aspernatur odit quo! Veritatis non magni cumque eveniet modi vitae totam
+      magnam temporibus obcaecati ad repellendus consectetur itaque corporis
+      repellat, voluptatum ab nam maiores ducimus dolores perferendis! Vel
+      quaerat nihil repellendus iste alias. Illum veritatis a quod vitae
+      dignissimos eveniet unde neque corporis voluptas iste facere debitis magni
+      nemo, saepe accusantium quisquam consequatur provident eaque corrupti
+      placeat iusto! Exercitationem reprehenderit porro corrupti doloremque!
+      Labore similique, quod quasi veniam aut dolor recusandae dicta aliquid
+      corporis vero sapiente incidunt iusto doloribus sequi velit dolores fuga
+      odio, nostrum blanditiis quis laboriosam reprehenderit minus perspiciatis?
+      Numquam, nulla! Dignissimos, odio blanditiis sint id pariatur veniam
+      maxime eligendi ut fugiat dolorum quisquam assumenda accusamus cumque,
+      voluptate quos! Reiciendis sint eligendi laboriosam quam consectetur
+      mollitia accusamus quos at consequatur eos? Cum, eius doloribus? Aut
+      reprehenderit laboriosam accusantium ad, itaque nam voluptas consectetur
+      quaerat impedit nihil optio totam sit facere excepturi, harum enim, porro
+      libero molestiae corporis doloribus! A, magnam fugit? Ea mollitia culpa
+      distinctio qui harum quae sit nobis iste, molestiae magni, eligendi illum
+      doloribus voluptates! Ratione incidunt repellendus enim quos vero, illo,
+      similique rem, quo inventore ab totam repellat.
+    </div>
+    <div style="width: 10px; height: 1000px; background-color: red"></div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>background-linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>background-radial-gradient</h3>
+    <div class="radial-gradient"></div>
+  </body>
+</html>

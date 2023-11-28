@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+html {
+  font-family: 'NaNum Pen Script', 'mono-space';
+  font-size: 24px;
+}
+div.postit {
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  rotate: 10deg;
+  margin-left: 40%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(255, 255, 0, 0.471);
+}
+h1 {
+  padding: 10px;
+}
+p {
+  line-height: 30px;
+}
+
+div.LoginBox {
+  border: 1px solid black;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+}
+
+.LogWithGoogle {
+  border: 1px solid black;
+  width: 320px;
+  height: 90px;
+  margin: 10% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.LogWithGoogle .GoogleIcon {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.GoogleIcon img {
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+}
+
+div.LoginBox > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0%;
+}
+
+ul > li {
+  list-style: none;
+}
+
+input {
+  width: 320px;
+  height: 70px;
+  margin: 10px 0px;
+  background-color: rgba(128, 128, 128, 0.202);
+  border: none;
+}
+
+.LoginBox form div ul li input::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-indent: 15px;
+}
+
+#LoginButton {
+  background-color: rgba(15, 22, 3, 0.868);
+  color: white;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+#ForgotPassWord {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#ForgotPassWord > a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  columns: #333;
+}
+
+.IndexBox {
+  border: 1px solid #333;
+  max-width: 500px;
+  height: 500px;
+  margin-left: 40%;
+  background-color: rgba(0, 8, 255, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
