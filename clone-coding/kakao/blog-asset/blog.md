@@ -4,7 +4,6 @@
 
 <a href = 'https://www.kakaocorp.com/page/'>카카오 페이지</a>
 
-# 레이아웃 나누기
 
 <img src = '/blog-asset/layout.png'>
 
@@ -12,7 +11,7 @@
 
 우선 가장 위에 있는 `nav` 바에 대해서 생각해보자
 
-### `nav`
+## Header 영역 살펴보기
 
 <img src = '/blog-asset/image-1.png'>
 
@@ -24,109 +23,10 @@ KaKao 란 문구가 카카오 홈페이지로 들어가는 `a` 태그로 구성�
 
 맨 우측에는 검색 할 수 있는 돋보기 아이콘 , 언어 아이콘, 다크모드 아이콘이 존재한다.
 
-### 구역 나누기
+### Nav bar 만들기
 
 ![Alt text](image-2.png)
 
-<details>
-<summary>HTML</summary>
-```html
-<header>
-  <div id="Wrap-Header">
-    <a id="Home-Href" href="#">KaKao</a>
-    <nav id="Header-Nav">
-      <ul>
-        <li>소개</li>
-        <li>이야기</li>
-        <li>뉴스</li>
-        <li>기술과 서비스</li>
-        <li>약속과 책임</li>
-      </ul>
-    </nav>
-    <div id="Header-Icon">
-      <div id="Search-Icon"></div>
-      <div id="Global-Icon"></div>
-      <div id="Darkmode-icon"></div>
-    </div>
-  </div>
-</header>
-```
-</details>
-
-<details>
-<summary>CSS</summary>
-```
-
-/_ Header _/
-
-header {
-display: flex;
-justify-content: center;
-}
-
-#Wrap-Header {
-border: 1px solid black;
-width: 90%;
-height: 60px;
-box-sizing: border-box;
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-
-#Wrap-Header #Home-Href {
-font-size: 20px;
-font-weight: bold;
-color: black;
-text-decoration: none;
-}
-
-/_ Header-Nav _/
-
-#Wrap-Header #Header-Nav ul {
-display: flex;
-list-style: none;
-}
-
-#Wrap-Header #Header-Nav ul li {
-margin-right: 30px;
-}
-
-/_ Heme-Icon _/
-#Wrap-Header #Header-Icon {
-width: 80px;
-height: 40px;
-border: 1px solid rgb(20, 4, 4);
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-
-#Wrap-Header #Header-Icon div {
-width: 20px;
-height: 20px;
-border: 1px solid black;
-}
-
-#Search-Icon {
-background-image: url(asset/search_icon.png);
-background-size: cover;
-}
-
-#Global-Icon {
-background-image: url(asset/earth_icon.png);
-background-size: cover;
-}
-
-#Darkmode-icon {
-background-image: url(asset/darkmode_icon.png);
-background-size: cover;
-}
-
-```
-
-
-</details>
 
 우선 `Header` 태그 안에 `KaKao` , `소개 , 이야기 , 뉴스 , 기술과 서비스 , 약속과 책임` , `Icon` 들이 담길 수 있도록 하였다.
 
@@ -148,4 +48,26 @@ background-size: cover;
 실제 카카오 페이지에서는 `ul` 태그를 누르면 밑으로 뿅 하고 세부 내용들이 나오는데 그것은 나중에 자바스크립트를 공부한 다음에 하는걸로 하고 ..
 
 `검색,언어 설정, 다크모드` 아이콘도 누르면 설정이 되는데 그것 또한 자바스크립트를 공부한 다음에 하는걸로 하자
-```
+
+
+### Title Text
+
+![Alt text](image-3.png)
+
+Navigator 밑에는 현재 날짜와 Title Text 가 존재한다. 
+
+날짜 달력의 경우에는 어떤 애니메이션이 가미되어있지만 
+
+그건 내가 못하니까 달력 이미지로 하기로 하고 ><
+
+영역만 구현해놓자 
+
+
+
+
+
+
+
+
+
+

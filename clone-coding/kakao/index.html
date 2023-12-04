@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KaKao-Clonecoding</title>
+    <title>kakao</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div id="Wrap-Header">
-        <a id="Home-Href" href="#">KaKao</a>
-        <nav id="Header-Nav">
+      <div class="Header-bar">
+        <a href="#" class="Icon-href">
+          <h1 class="Icon-logo">
+            <img src="asset/logo.png" alt="logo" />
+          </h1>
+        </a>
+        <nav id="Header-nav">
           <ul>
             <li>소개</li>
             <li>이야기</li>
@@ -19,47 +23,259 @@
             <li>약속과 책임</li>
           </ul>
         </nav>
-        <div id="Header-Icon">
-          <div id="Search-Icon"></div>
-          <div id="Global-Icon"></div>
-          <div id="Darkmode-icon"></div>
+        <div class="Header-util">
+          <div class="Util-search"></div>
+          <div class="Util-lagng"></div>
+          <div class="Util-darkmode"></div>
         </div>
       </div>
     </header>
-    <main class="Doc-Main">
-      <div class="Main-Content">
-        <article class="Content-Article">
-          <h3 class="Article-Title">
-            <img class = 'Date-Img' src="asset/date-icon.png" alt="" / >
-            <span class="Text">
-              <span class="Title-Date"
-                ><strong>11월 28일에 전하는</strong></span
-              >
-              <span class="Title-Text"><strong>카카오 소식입니다</strong></span>
-            </span>
-          </h3>
-          <div class="Content-Home">
-            <div class="Section-Home_1">
-              <div id= 'Section1-Sub1'>
-                <div class="Inner-Item">카카오 이모티콘 어쩌구</div>
-                <div class="Inner-Item">카카오와 단골 어쩌구</div>
+    <main>
+      <div class="Main-content">
+        <article class="Main-article">
+          <div class="Main-banner">
+            <h1 class="Main-wrapper">
+              <div class="Banner-content">
+                <div class="Date-Image"></div>
+                <div class="Date-Text">
+                  <span>11월 28일에 전하는</span>
+                  <span>카카오 소식입니다</span>
+                </div>
               </div>
-              <div id= 'Section1-Sub2'>
-                <div class="Inner-Wrap">
-                  <div class="Inner-Item">A</div>
-                  <div class="Inner-Item">B</div>
-                  <div class="Inner-Item">C</div>
-                  <div class="Inner-Item">D</div>
-                  <div class="Inner-Item">E</div>
-                  <div class="Inner-Item">F</div>
+            </h1>
+          </div>
+          <section>
+            <div class="Main-section">
+              <div class="Inner-Wraps flex">
+                <div class="Inner-Items">
+                  <a href="https://www.kakaocorp.com/page/detail/10723">
+                    <span class="Wrap-cont">
+                      <span class="Wrap-header">
+                        <div class="IconAndText">
+                          <img
+                            src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1a39fc91018c00001.png?type=thumb&opt=C72x72.fwebp"
+                            alt=""
+                          />
+                          <span>금융안전보고서</span>
+                        </div>
+                      </span>
+                      <span class="Wrap-title"
+                        ><strong>금융안전을 위한 카카오의 노력</strong></span
+                      >
+                      <span class="Wrap-meta">
+                        <span>#금융안전보고서</span>
+                        <span>#안전한금융</span>
+                        <span>#이용자보호</span>
+                        <span>#카카오의 다짐</span>
+                      </span>
+                      <span class="Wrap-img">
+                        <img
+                          src="asset/카카오 금융안전보고서2023.webp"
+                          alt=""
+                        />
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                <div class="Inner-Items">
+                  <a
+                    href="https://www.kakaocorp.com/page/responsible/dangolchallenge"
+                  >
+                    <span class="Wrap-cont">
+                      <span class="Wrap-header">
+                        <div class="IconAndText">
+                          <img
+                            src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1cf6a77b018800001.png?type=thumb&opt=C72x72.fwebp"
+                            alt=""
+                          />
+                          <span style="background-color: #fae100"
+                            >하이라이트</span
+                          >
+                        </div>
+                      </span>
+                      <span class="Wrap-title">
+                        <strong>카카오와 함께 하는 단골 만들기 챌린지</strong>
+                      </span>
+                      <span class="Wrap-meta">
+                        <span>#단골만들기</span>
+                        <span>#카카오톡채널</span>
+                      </span>
+                      <span class="Wrap-img">
+                        <img
+                          src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fhighlight%2F04698903018b00001.jpg"
+                          alt=""
+                        />
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="Inner-Wraps-grid">
+                <div class="Inner-Items-grid">
+                  <div class="Inner-Items">
+                    <a href="https://www.kakaocorp.com/page/detail/10723">
+                      <span class="Wrap-cont-Half">
+                        <span class="Wrap-header">
+                          <div class="IconAndText">
+                            <img
+                              src="https://www.kakaocorp.com/page/ico_responsible.png"
+                              alt=""
+                            />
+                            <span>약속과 책임</span>
+                          </div>
+                        </span>
+                        <span class="Wrap-title">
+                          <strong>ESG보고서,<br />카카오의 약속과 책임</strong>
+                        </span>
+                        <span class="Wrap-meta">
+                          <span>#카카오ESG보고서</span>
+                          <span>#ESG보고서</span>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="Inner-Items">
+                    <a href="https://www.kakaocorp.com/page/detail/10723">
+                      <span class="Wrap-cont-Half">
+                        <span class="Wrap-header">
+                          <div class="IconAndText">
+                            <img
+                              src="https://www.kakaocorp.com/page/ico_talktips.png"
+                              alt=""
+                            />
+                            <span>카톡 설명서</span>
+                          </div>
+                        </span>
+                        <span class="Wrap-title">
+                          <strong
+                            >모두의 카톡을 더 가깝고 안전하게,
+                            카톡설명서</strong
+                          >
+                        </span>
+                        <span class="Wrap-meta">
+                          <span>#카카오톡</span>
+                          <span>#커뮤니케이션</span>
+                          <span>#라이프</span>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="Inner-Items">
+                    <a href="https://www.kakaocorp.com/page/detail/10723">
+                      <span class="Wrap-cont-Half">
+                        <span class="Wrap-header">
+                          <div class="IconAndText">
+                            <img
+                              src="https://www.kakaocorp.com/page/ico_activegreen.png"
+                              alt=""
+                            />
+                            <span>액티브그린</span>
+                          </div>
+                        </span>
+                        <span class="Wrap-title">
+                          <strong
+                            >이용자와 함께 꿈꾸는<br />지속가능한 지구</strong
+                          >
+                        </span>
+                        <span class="Wrap-meta">
+                          <span>#esg</span>
+                          <span>#액티브그린</span>
+                          <span>#환경</span>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="Inner-Items">
+                    <a href="https://www.kakaocorp.com/page/detail/10723">
+                      <span class="Wrap-cont-Half">
+                        <span class="Wrap-header">
+                          <div class="IconAndText">
+                            <img
+                              src="https://www.kakaocorp.com/page/ico_customer.png"
+                              alt=""
+                            />
+                            <span>고객센터</span>
+                          </div>
+                        </span>
+                        <span class="Wrap-title">
+                          <span class="Wrap-claim">
+                            어떤 서비스를 도와드릴까요 ?
+                          </span>
+                        </span>
+                        <div class="Wrap-claim-list">
+                          <span class="claim-item">카카오</span>
+                          <span class="claim-item">다음</span>
+                          <span class="claim-item">커머스</span>
+                        </div>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="Inner-Itmes">
+                    <a href="https://www.kakaocorp.com/page/detail/10723">
+                      <span class="Wrap-cont-Half">
+                        <span class="Wrap-header">
+                          <div class="IconAndText">
+                            <img
+                              src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1a39fc91018c00001.png?type=thumb&opt=C72x72.fwebp"
+                              alt=""
+                            />
+                            <span>금융안전보고서</span>
+                          </div>
+                        </span>
+                        <span class="Wrap-title" style="font-size: 22px">
+                          <strong
+                            >금융안전을 위한 카카오의 <br />노력 <br />
+                          </strong>
+                        </span>
+                        <span class="Wrap-meta">
+                          <span>#금융안전보고서</span>
+                          <span>#ESG보고서</span>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="Inner-Itmes">
+                    <a href="https://www.kakaocorp.com/page/detail/10723">
+                      <span class="Wrap-cont-Half">
+                        <span class="Wrap-header">
+                          <div class="IconAndText">
+                            <img
+                              src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png?type=thumb&opt=C72x72.fwebp"
+                              alt=""
+                            />
+                            <span>보도 자료</span>
+                          </div>
+                        </span>
+                        <span class="Wrap-title" style="font-size: 22px">
+                          <strong
+                            >카카오,디지털 플랫폼,<br />이용자 보호 노력
+                            담은...</strong
+                          >
+                        </span>
+                        <span class="Wrap-meta">
+                          <span>#카카오</span>
+                          <span>#금융안전보고서</span>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div id="Section-Wallpaper"></div>
-            <div id="Section-SNS"></div>
-            <div id="Section-Home_2"></div>
-          </article>
-        </div>
+            <div class="Main-culture">
+              <h1 class="Culture-title">
+                기술과 사람으로 더 나은 세상을 만듭니다.
+              </h1>
+              <span class="Culture-site"> 카카오문화 바로가기-> </span>
+              <img
+                src="https://www.kakaocorp.com/page/bg_home_culture_210325.png"
+                alt=""
+                class="Culture-img"
+              />
+            </div>
+          </section>
+        </article>
+      </div>
     </main>
   </body>
 </html>
